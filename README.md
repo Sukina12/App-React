@@ -35,6 +35,7 @@
 ********************************************************************************************
 
 #### Number and name of feature: Feature 3: Bootstrap
+
 ** Estimate of time needed to complete: 1 hour
 
 ** Start time:10:30 pm
@@ -42,3 +43,16 @@
 ** Finish time:11:30 pm
 
 ** Actual time needed to complete:1 hour
+
+********************************************************************************************
+## Lab Class 03:
+
+#### Number and name of feature: Feature #1: Display a Modal
+
+** Estimate of time needed to complete: 2 hours
+
+** Start time: first day : 3:00n pm  , seconde day : 4:00 pm
+
+** Finish time: first day: 7:00pm , seconde day : 6:00 pm
+
+** Actual time needed to complete:6 hours
