@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import SelectedBeast from './components/SelectedBeast';
+import MyForm from './components/form';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,10 +13,23 @@ class App extends React.Component {
     this.state = {
       cornsAnimals: DataJson,
       show: false,
-      info: {}
+      info: {},
+      numOfHorns: ''
 
     };
   }
+  filterData = (event) => {
+    if (this.state.numOfHorns !== 'All') {
+      this.setState({
+        cornsAnimals: DataJson.filter(animal => animal.horns === Number(this.state.numOfHorns))
+      });
+    }
+    else
+      this.setState({ cornAnimals: DataJson });
+  }
+
+  updateHorns = horns => this.setState({ numOfHorns: horns.target.value });
+
   viewBeast = (beast) => {
     this.setState({
       show: true,
@@ -33,8 +47,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
+        <MyForm filterData={this.filterData}
+          numOfHorns={this.state.numOfHorns}
+          updateHorns={this.updateHorns}
+          cornsAnimals={this.state.cornsAnimals}/>
         <Main cornsAnimals={this.state.cornsAnimals} viewBeast={this.viewBeast} />
-        <SelectedBeast show={this.state.show} info={this.state.info} closing={this.closing}/>
+        <SelectedBeast show={this.state.show} info={this.state.info} closing={this.closing} />
         <Footer />
 
       </div>
