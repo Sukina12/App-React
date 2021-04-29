@@ -21,11 +21,12 @@ class App extends React.Component {
   filterData = (event) => {
     if (this.state.numOfHorns !== 'All') {
       this.setState({
-        cornsAnimals: DataJson.filter(animal => animal.horns === Number(this.state.numOfHorns))
-      });
+        cornsAnimals: DataJson.filter(animal => animal.horns === Number(this.state.numOfHorns))});
     }
-    else
-      this.setState({ cornAnimals: DataJson });
+    else{
+      this.setState({
+        cornsAnimals: DataJson.filter(animal => animal.horns> 0)});
+    }
   }
 
   updateHorns = horns => this.setState({ numOfHorns: horns.target.value });

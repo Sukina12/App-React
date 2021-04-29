@@ -1,22 +1,13 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import HornedBeasts from './HornedBeast';
+// import HornedBeasts from './HornedBeast';
 
 class MyForm extends React.Component {
   update = horns => this.props.updateHorns(horns);
   submitForm = (event) => {
     event.preventDefault();
     this.props.filterData(event);
-    return (
-      <div>
-        <HornedBeasts
-          title={this.props.title}
-          image_url={this.props.image_url}
-          description={this.props.description}
-          viewBeast={this.props.viewBeast}/>
-      </div>
-    );
   }
 
   render() {
@@ -28,10 +19,10 @@ class MyForm extends React.Component {
           <br />
           <Form.Control onChange={this.update} name="horns" as="select" defaultValue={'All'}>
             <option value="All">All</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="100">100</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="100">Hundred</option>
           </Form.Control>
           <br />
           <br />
