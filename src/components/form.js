@@ -4,10 +4,6 @@ import Button from 'react-bootstrap/Button';
 import HornedBeasts from './HornedBeast';
 
 class MyForm extends React.Component {
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
   update = horns => this.props.updateHorns(horns);
   submitForm = (event) => {
     event.preventDefault();

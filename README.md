@@ -45,6 +45,7 @@
 ** Actual time needed to complete:1 hour
 
 ********************************************************************************************
+
 ## Lab Class 03:
 
 #### Number and name of feature: Feature #1: Display a Modal
@@ -56,3 +57,18 @@
 ** Finish time: first day: 7:00pm , seconde day : 6:00 pm
 
 ** Actual time needed to complete:6 hours
+
+
+********************************************************************************************
+
+## Lab Class 04:
+
+#### Number and name of feature: Feature #1: Form
+
+** Estimate of time needed to complete: 2 hours
+
+** Start time: 10:00 pm
+
+** Finish time: 2:00 am
+
+** Actual time needed to complete:4 hours
